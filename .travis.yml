@@ -1,7 +1,9 @@
 language: bash
 services: docker
 before_install:
-  - cd rating/
+  - echo "Directory files and folders"
+  - ls
+  - cd "LopesGabriel/rating"
   - echo "We are in the Docker folder!"
 script:
   - ./mvnw -DskipTests package
