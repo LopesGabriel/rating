@@ -1,6 +1,7 @@
-language: bash
+language: java
 services: docker
 before_install:
+  - echo $JAVA_HOME
   - chmod +x mvnw
 script:
   - ./mvnw -DskipTests package
